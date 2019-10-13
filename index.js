@@ -43,7 +43,7 @@ export default class Timer extends Component {
         const seconds = parseInt(second % 60);
 
         return (
-            <span>
+            <span className='rn-basic-timer'>
                 {!hideHours && (hours + ':')}
                 {this.zeroPrefix(minutes) + ':'}
                 {this.zeroPrefix(seconds)}
